@@ -60,7 +60,8 @@
     sort: 'distance',          // 'distance' | 'recommended'
     favorites: loadSet(LS_FAVS),
     visited: loadSet(LS_VISITED),
-    plan: loadArray(LS_PLAN)   // sorrendtartó tömb
+    plan: loadArray(LS_PLAN),  // sorrendtartó tömb
+    userLocation: null         // élő helyzet (a felhasználó saját helye), ha elérhető
   };
 
   /* ---- DOM hivatkozások ---- */
@@ -137,6 +138,68 @@
     return String(Math.round(km)) + ' km';
   }
 
+  /* ---- Élő távolság a felhasználó saját helyétől ---- */
+  /* Légvonalbeli (haversine) távolság km-ben. */
+  function haversineKm(lat1, lng1, lat2, lng2) {
+    var R = 6371;
+    function toRad(d) { return d * Math.PI / 180; }
+    var dLat = toRad(lat2 - lat1);
+    var dLng = toRad(lng2 - lng1);
+    var s1 = Math.sin(dLat / 2);
+    var s2 = Math.sin(dLng / 2);
+    var a = s1 * s1 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * s2 * s2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+  /* A POI élő távolsága a felhasználó helyétől, ha mindkettő ismert. */
+  function liveDistanceKm(poi) {
+    var loc = state.userLocation;
+    if (!loc) return null;
+    var g = poi.gps;
+    if (!g || typeof g.lat !== 'number' || typeof g.lng !== 'number') return null;
+    return haversineKm(loc.lat, loc.lng, g.lat, g.lng);
+  }
+  /* Megjelenítéshez és rendezéshez használt távolság:
+     ha van élő helyzet, onnan számolunk; különben az eredeti (szállás-alapú) érték. */
+  function effectiveDistanceKm(poi) {
+    var live = liveDistanceKm(poi);
+    if (live !== null && !isNaN(live)) return live;
+    return (typeof poi.distance_one_way_km === 'number') ? poi.distance_one_way_km : 0;
+  }
+  /* A már kirenderelt kártyák távolságszámának frissítése helyben (átrendezés nélkül). */
+  function refreshDistanceTexts() {
+    if (!el.poiList) return;
+    var cards = el.poiList.querySelectorAll('.card');
+    cards.forEach(function (card) {
+      var poi = state.byId[card.getAttribute('data-id')];
+      if (!poi) return;
+      var span = card.querySelector('.m-dist');
+      if (span) span.textContent = fmtDistance(effectiveDistanceKm(poi));
+    });
+  }
+  /* Helymeghatározás indítása: a távolságok a felhasználó saját helyétől frissülnek. */
+  function initLocation() {
+    if (!('geolocation' in navigator)) return;
+    var firstFix = true;
+    var opts = { enableHighAccuracy: false, maximumAge: 30000, timeout: 15000 };
+    function onPos(pos) {
+      if (!pos || !pos.coords) return;
+      state.userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      if (firstFix) {
+        firstFix = false;
+        // első helyzet: nyitott kártyát ne zárjunk be, ilyenkor csak a számokat frissítjük
+        if (el.poiList.querySelector('.card.is-open')) refreshDistanceTexts();
+        else renderList(false);
+      } else {
+        // mozgás közben csak a számok frissülnek, nincs zavaró átrendezés
+        refreshDistanceTexts();
+      }
+    }
+    function onErr() { /* nincs helyadat: marad az eredeti, szállás-alapú távolság */ }
+    try {
+      navigator.geolocation.watchPosition(onPos, onErr, opts);
+    } catch (e) {}
+  }
+
   /* Időtartomány „perc"-ben; 0-t nem mutatunk félrevezetően */
   function fmtMinutes(min, max) {
     var a = (typeof min === 'number') ? min : null;
@@ -181,7 +244,7 @@
     var list = state.pois.filter(function (p) { return p.category === state.tab; });
     if (state.sort === 'distance') {
       list.sort(function (a, b) {
-        return (a.distance_one_way_km || 0) - (b.distance_one_way_km || 0);
+        return effectiveDistanceKm(a) - effectiveDistanceKm(b);
       });
     } else {
       var prioRank = function (p) {
@@ -237,7 +300,7 @@
   function cardHtml(poi) {
     var name = displayName(poi);
     var ico = CAT_ICON[poi.category] || '📍';
-    var dist = fmtDistance(poi.distance_one_way_km);
+    var dist = fmtDistance(effectiveDistanceKm(poi));
     var ti = timeInfo(poi);
 
     var meta = '';
@@ -815,6 +878,9 @@
 
     // offline állapot
     if (!navigator.onLine) updateOnline();
+
+    // élő helymeghatározás: a távolságok a felhasználó saját helyétől frissülnek
+    initLocation();
   }
 
   function fail() {
