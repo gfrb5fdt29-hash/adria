@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0">
+  <title>Senj 2026</title>
+
+  <!-- iOS PWA / standalone meta tagek -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Senj 2026">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Gyors útitárs a Senj 2026 nyaraláshoz.">
+
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app" class="app is-booting">
+    <!-- iOS-szerű large-title fejléc -->
+    <header class="app-header" id="appHeader">
+      <div class="header-inner">
+        <div class="header-titles">
+          <h1 class="large-title">Senj 2026</h1>
+          <p class="subtitle">Gyors útitárs nyaraláshoz</p>
+        </div>
+        <div class="header-actions">
+          <button type="button" id="favBtn" class="icon-btn" aria-label="Kedvencek megnyitása">
+            <span aria-hidden="true">♥</span>
+          </button>
+          <button type="button" id="planBtn" class="icon-btn" aria-label="Mai terv megnyitása">
+            <span aria-hidden="true">📋</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="content" id="content">
+      <!-- iOS-szerű segmented control: rendezés -->
+      <div class="sort-wrap reveal" id="sortWrap">
+        <div class="segmented" id="sortControl" role="group" aria-label="Rendezés">
+          <span class="seg-indicator" id="segIndicator" aria-hidden="true"></span>
+          <button type="button" class="seg-btn is-active" data-sort="distance" aria-pressed="true">Távolság</button>
+          <button type="button" class="seg-btn" data-sort="recommended" aria-pressed="false">Ajánlott</button>
+        </div>
+      </div>
+
+      <p class="state-msg" id="loadingState">Helyek betöltése…</p>
+      <p class="state-msg" id="errorState" hidden>Nem sikerült betölteni az adatokat.</p>
+
+      <div class="poi-list" id="poiList" aria-live="polite"></div>
+    </main>
+
+    <!-- Alsó kategórianavigáció -->
+    <nav class="bottom-nav" id="bottomNav" aria-label="Kategóriák">
+      <button type="button" class="nav-btn is-active" data-cat="rejtett_gyongyszem" aria-label="Gyöngyszemek">
+        <span class="nav-ico" aria-hidden="true">⭐</span>
+        <span class="nav-label">Gyöngyszemek</span>
+      </button>
+      <button type="button" class="nav-btn" data-cat="strand" aria-label="Strandok">
+        <span class="nav-ico" aria-hidden="true">🌊</span>
+        <span class="nav-label">Strandok</span>
+      </button>
+      <button type="button" class="nav-btn" data-cat="étterem" aria-label="Éttermek">
+        <span class="nav-ico" aria-hidden="true">🍴</span>
+        <span class="nav-label">Éttermek</span>
+      </button>
+      <button type="button" class="nav-btn" data-cat="bolt_bevasarlas" aria-label="Boltok">
+        <span class="nav-ico" aria-hidden="true">🛒</span>
+        <span class="nav-label">Boltok</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Diszkrét offline jelzés -->
+  <div class="offline-badge" id="offlineBadge" role="status" aria-live="polite" hidden>Offline mód</div>
+
+  <!-- Diszkrét visszajelzés (toast) -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Bottom sheet háttér -->
+  <div class="sheet-overlay" id="sheetOverlay" hidden></div>
+
+  <!-- Kedvencek bottom sheet -->
+  <section class="bottom-sheet" id="favSheet" role="dialog" aria-modal="true" aria-labelledby="favSheetTitle" aria-hidden="true">
+    <div class="sheet-grabber" aria-hidden="true"></div>
+    <div class="sheet-head">
+      <h2 class="sheet-title" id="favSheetTitle">Kedvencek</h2>
+      <button type="button" class="sheet-close" data-close="favSheet" aria-label="Bezárás">
+        <span aria-hidden="true">✕</span>
+      </button>
+    </div>
+    <div class="sheet-body" id="favBody"></div>
+  </section>
+
+  <!-- Mai terv bottom sheet -->
+  <section class="bottom-sheet" id="planSheet" role="dialog" aria-modal="true" aria-labelledby="planSheetTitle" aria-hidden="true">
+    <div class="sheet-grabber" aria-hidden="true"></div>
+    <div class="sheet-head">
+      <h2 class="sheet-title" id="planSheetTitle">Mai terv</h2>
+      <button type="button" class="sheet-close" data-close="planSheet" aria-label="Bezárás">
+        <span aria-hidden="true">✕</span>
+      </button>
+    </div>
+    <div class="sheet-body" id="planBody"></div>
+    <div class="sheet-foot" id="planFoot" hidden></div>
+  </section>
+
+  <script src="app.js" defer></script>
+  <script>
+    // Service worker regisztráció (relatív útvonal, GitHub Pages-kompatibilis)
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./service-worker.js').catch(function () { /* csendes */ });
+      });
+    }
+  </script>
+</body>
+</html>

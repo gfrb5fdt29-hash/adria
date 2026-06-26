@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Senj 2026 app ikon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060c18"/>
+      <stop offset="1" stop-color="#102334"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="42" y="42" width="428" height="428" rx="98" fill="#0a121f" stroke="#dcb45c" stroke-width="6"/>
+  <circle cx="368" cy="148" r="72" fill="#eab65a" opacity="0.22"/>
+  <circle cx="368" cy="148" r="48" fill="#eab65a" opacity="0.42"/>
+  <circle cx="368" cy="148" r="30" fill="#eab65a" opacity="0.95"/>
+  <rect x="154" y="174" width="108" height="158" rx="12" fill="#e4e7dd"/>
+  <rect x="154" y="132" width="22" height="42" fill="#e4e7dd"/>
+  <rect x="198" y="132" width="22" height="42" fill="#e4e7dd"/>
+  <rect x="240" y="132" width="22" height="42" fill="#e4e7dd"/>
+  <rect x="185" y="210" width="50" height="22" fill="#0b1622"/>
+  <rect x="198" y="272" width="32" height="60" rx="14" fill="#0b1622"/>
+  <rect x="102" y="328" width="308" height="9" rx="5" fill="#2d839d" opacity="0.55"/>
+  <rect x="118" y="360" width="276" height="9" rx="5" fill="#2d839d" opacity="0.75"/>
+  <rect x="139" y="392" width="234" height="9" rx="5" fill="#2d839d" opacity="0.92"/>
+  <text x="256" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="800" fill="#f4f1e2" letter-spacing="3">SENJ</text>
+  <text x="256" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="#e1b55f" letter-spacing="4">2026</text>
+</svg>
