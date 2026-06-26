@@ -4,20 +4,20 @@
    ========================================================================== */
 
 :root {
-  /* Színek */
-  --bg: #000000;
-  --card: #101D30;
-  --card-2: #14233a;
-  --blue: #3C8AE6;
-  --blue-strong: #2C6FC0;   /* gombháttér – jobb AA-kontraszt */
-  --sand: #CF9445;
-  --text: #EAE7E0;
-  --text-2: #9BA6B2;
-  --border: #1C2838;
-  --hairline: rgba(255, 255, 255, 0.08);
-  --on-blue: #F1F5FB;
+  /* Színek – sötét, de a feketéből kissé felemelt sötétkék árnyalat */
+  --bg: #0B111C;
+  --card: #182740;
+  --card-2: #1F2F49;
+  --blue: #4A93E8;
+  --blue-strong: #2F73C2;   /* gombháttér – jobb AA-kontraszt */
+  --sand: #D49A4C;
+  --text: #EEECE6;
+  --text-2: #AEB8C4;
+  --border: #283950;
+  --hairline: rgba(255, 255, 255, 0.10);
+  --on-blue: #F4F8FE;
   --on-sand: #2A1E08;
-  --elevated: #16263c;
+  --elevated: #20314C;
 
   /* Easing */
   --ease-out-premium: cubic-bezier(0.16, 1, 0.3, 1);
@@ -101,7 +101,7 @@ img { display: block; }
   border-bottom: 1px solid transparent;
 }
 .app-header.is-scrolled {
-  background: rgba(6, 11, 20, 0.72);
+  background: rgba(11, 17, 28, 0.72);
   -webkit-backdrop-filter: saturate(160%) blur(18px);
   backdrop-filter: saturate(160%) blur(18px);
   border-bottom: 1px solid var(--hairline);
@@ -423,12 +423,13 @@ img { display: block; }
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
   padding: 6px 8px calc(6px + var(--safe-bottom));
-  background: rgba(6, 11, 20, 0.82);
+  background: rgba(11, 17, 28, 0.82);
   -webkit-backdrop-filter: saturate(160%) blur(20px);
   backdrop-filter: saturate(160%) blur(20px);
   border-top: 1px solid var(--hairline);
 }
 .nav-btn {
+  position: relative;
   border: 0;
   background: transparent;
   color: var(--text-2);
@@ -437,18 +438,40 @@ img { display: block; }
   align-items: center;
   gap: 3px;
   padding: 6px 2px;
-  border-radius: 12px;
+  border-radius: 14px;
   min-height: 52px;
   transition: color 0.2s var(--ease-smooth), transform 0.12s var(--ease-out-premium);
 }
 .nav-btn .nav-ico {
+  position: relative;
+  z-index: 1;
   font-size: 21px;
   line-height: 1;
   transition: transform 0.24s var(--ease-out-premium);
 }
-.nav-btn .nav-label { font-size: 11px; font-weight: 600; letter-spacing: 0.01em; }
-.nav-btn.is-active { color: var(--text); }
-.nav-btn.is-active .nav-ico { transform: translateY(-2px) scale(1.12); }
+.nav-btn .nav-label {
+  position: relative;
+  z-index: 1;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+/* Aktív fül: jól látható kiemelés – kék pirula + kék szín */
+.nav-btn.is-active { color: var(--blue); }
+.nav-btn.is-active .nav-label { color: var(--blue); font-weight: 700; }
+.nav-btn.is-active .nav-ico { transform: translateY(-1px) scale(1.16); }
+.nav-btn.is-active::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 6px;
+  right: 6px;
+  background: rgba(74, 147, 232, 0.18);
+  border: 1px solid rgba(74, 147, 232, 0.36);
+  border-radius: 14px;
+  z-index: 0;
+}
 .nav-btn:active { transform: scale(0.94); }
 
 /* ==========================================================================

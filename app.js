@@ -22,25 +22,63 @@
     bolt_bevasarlas: '🛒'
   };
 
-  /* ---- Boltok alkategóriái (csak a Boltok fül felső kapcsolójához) ---- */
-  var SHOP_CATS = [
-    { key: 'elelmiszer', label: 'Élelmiszer' },
-    { key: 'pekseg', label: 'Pékség' },
-    { key: 'drogeria', label: 'Drogéria' },
-    { key: 'kiosk', label: 'Kioszk' }
-  ];
-  var SHOP_CAT_OF = {
+  /* ---- Alkategóriák fülönként (a felső kapcsoló minden fülön ezeket mutatja) ---- */
+  var SUBCATS = {
+    'rejtett_gyongyszem': [
+      { key: 'tortenelem', label: 'Történelem' },
+      { key: 'kilato', label: 'Kilátó' },
+      { key: 'tengerpart', label: 'Tengerpart' }
+    ],
+    'strand': [
+      { key: 'varosi', label: 'Városi' },
+      { key: 'obol', label: 'Öböl' },
+      { key: 'svetijuraj', label: 'Sveti Juraj' }
+    ],
+    'étterem': [
+      { key: 'pizza', label: 'Pizza' },
+      { key: 'grill', label: 'Grill & hús' },
+      { key: 'bistro', label: 'Bistro' }
+    ],
+    'bolt_bevasarlas': [
+      { key: 'elelmiszer', label: 'Élelmiszer' },
+      { key: 'pekseg', label: 'Pékség' },
+      { key: 'drogeria', label: 'Drogéria' },
+      { key: 'kiosk', label: 'Kioszk' }
+    ]
+  };
+  var SUBCAT_OF = {
+    'gem-003': 'tortenelem', 'gem-006': 'tortenelem', 'gem-020': 'tortenelem',
+    'gem-002': 'kilato', 'gem-008': 'kilato',
+    'gem-004': 'tengerpart', 'gem-005': 'tengerpart', 'gem-009': 'tengerpart',
+    'beach-003': 'varosi', 'beach-006': 'varosi', 'beach-010': 'varosi',
+    'beach-001': 'obol', 'beach-002': 'obol', 'beach-004': 'obol', 'beach-005': 'obol', 'beach-007': 'obol',
+    'beach-008': 'svetijuraj', 'beach-009': 'svetijuraj',
+    'food-001': 'pizza', 'food-003': 'pizza', 'food-007': 'pizza', 'food-009': 'pizza', 'food-010': 'pizza',
+    'food-002': 'grill', 'food-005': 'grill', 'food-008': 'grill',
+    'food-004': 'bistro', 'food-006': 'bistro',
     'shop-001': 'elelmiszer', 'shop-003': 'elelmiszer', 'shop-004': 'elelmiszer',
     'shop-005': 'elelmiszer', 'shop-012': 'elelmiszer',
     'shop-009': 'pekseg', 'shop-010': 'pekseg',
     'shop-002': 'drogeria', 'shop-013': 'drogeria',
     'shop-011': 'kiosk'
   };
-  function shopCatIndex(key) {
-    for (var i = 0; i < SHOP_CATS.length; i++) { if (SHOP_CATS[i].key === key) return i; }
+  function subcatsFor(tab) { return SUBCATS[tab] || []; }
+  function subcatIndex(tab, key) {
+    var a = subcatsFor(tab);
+    for (var i = 0; i < a.length; i++) { if (a[i].key === key) return i; }
     return -1;
   }
-  function isShopCatKey(key) { return shopCatIndex(key) >= 0; }
+  function activeSubcat(tab) {
+    var k = state.subCat ? state.subCat[tab] : null;
+    if (subcatIndex(tab, k) >= 0) return k;
+    var a = subcatsFor(tab);
+    return a.length ? a[0].key : null;
+  }
+  function defaultSubCats() {
+    var o = {};
+    for (var t in SUBCATS) { if (SUBCATS.hasOwnProperty(t)) o[t] = SUBCATS[t][0].key; }
+    return o;
+  }
 
   /* ---- Bizonytalan / ellenőrzésre utaló szövegek szűrése ---- */
   var UNCERTAIN_TOKENS = [
@@ -82,7 +120,7 @@
     visited: loadSet(LS_VISITED),
     plan: loadArray(LS_PLAN),  // sorrendtartó tömb
     userLocation: null,        // élő helyzet (a felhasználó saját helye), ha elérhető
-    shopCat: 'elelmiszer'      // aktív bolt-alkategória a Boltok fülön
+    subCat: defaultSubCats()   // aktív alkategória fülönként
   };
 
   /* ---- DOM hivatkozások ---- */
@@ -118,7 +156,7 @@
     try { localStorage.setItem(key, JSON.stringify(arr)); } catch (e) {}
   }
   function saveView() {
-    try { localStorage.setItem(LS_VIEW, JSON.stringify({ tab: state.tab, sort: state.sort, shopCat: state.shopCat })); } catch (e) {}
+    try { localStorage.setItem(LS_VIEW, JSON.stringify({ tab: state.tab, subCat: state.subCat })); } catch (e) {}
   }
   function loadView() {
     try {
@@ -126,8 +164,12 @@
       if (!raw) return;
       var v = JSON.parse(raw);
       if (v && CATEGORIES.indexOf(v.tab) !== -1) state.tab = v.tab;
-      if (v && (v.sort === 'distance' || v.sort === 'recommended')) state.sort = v.sort;
-      if (v && isShopCatKey(v.shopCat)) state.shopCat = v.shopCat;
+      if (v && v.subCat && typeof v.subCat === 'object') {
+        for (var ci = 0; ci < CATEGORIES.length; ci++) {
+          var tb = CATEGORIES[ci];
+          if (subcatIndex(tb, v.subCat[tb]) >= 0) state.subCat[tb] = v.subCat[tb];
+        }
+      }
     } catch (e) {}
   }
 
@@ -263,29 +305,13 @@
      Rendezés és szűrés
      ====================================================================== */
   function poisForTab() {
-    var list = state.pois.filter(function (p) { return p.category === state.tab; });
-    // Boltok fül: alkategória szerinti szűrés, távolság szerinti rendezés
-    if (state.tab === 'bolt_bevasarlas') {
-      list = list.filter(function (p) { return SHOP_CAT_OF[p.id] === state.shopCat; });
-      list.sort(function (a, b) { return effectiveDistanceKm(a) - effectiveDistanceKm(b); });
-      return list;
-    }
-    if (state.sort === 'distance') {
-      list.sort(function (a, b) {
-        return effectiveDistanceKm(a) - effectiveDistanceKm(b);
-      });
-    } else {
-      var prioRank = function (p) {
-        if (p.pwa_priority === 'magas') return 0;
-        if (p.pwa_priority === 'közepes') return 1;
-        return 2;
-      };
-      list.sort(function (a, b) {
-        var pa = prioRank(a), pb = prioRank(b);
-        if (pa !== pb) return pa - pb;
-        return (a.rank || 9999) - (b.rank || 9999);
-      });
-    }
+    var tab = state.tab;
+    var sub = activeSubcat(tab);
+    var list = state.pois.filter(function (p) {
+      return p.category === tab && SUBCAT_OF[p.id] === sub;
+    });
+    // alkategórián belül: a felhasználó helyétől mért távolság szerint növekvő
+    list.sort(function (a, b) { return effectiveDistanceKm(a) - effectiveDistanceKm(b); });
     return list;
   }
 
@@ -781,59 +807,35 @@
     el.content.scrollTop = 0;
     window.scrollTo({ top: 0 });
   }
-  function setSort(sort) {
-    if (state.sort === sort) return;
-    state.sort = sort;
+  function setSubCat(key) {
+    var tab = state.tab;
+    if (subcatIndex(tab, key) < 0 || state.subCat[tab] === key) return;
+    state.subCat[tab] = key;
     el.segmented.querySelectorAll('.seg-btn').forEach(function (b) {
-      var on = b.getAttribute('data-sort') === sort;
+      var on = b.getAttribute('data-subcat') === key;
       b.classList.toggle('is-active', on);
       b.setAttribute('aria-pressed', String(on));
     });
-    el.segmented.style.setProperty('--i', sort === 'recommended' ? 1 : 0);
+    el.segmented.style.setProperty('--i', Math.max(0, subcatIndex(tab, key)));
     saveView();
     renderList(true);
   }
 
-  function setShopCat(key) {
-    if (state.shopCat === key) return;
-    state.shopCat = key;
-    el.segmented.querySelectorAll('.seg-btn').forEach(function (b) {
-      var on = b.getAttribute('data-shopcat') === key;
-      b.classList.toggle('is-active', on);
-      b.setAttribute('aria-pressed', String(on));
-    });
-    el.segmented.style.setProperty('--i', shopCatIndex(key));
-    saveView();
-    renderList(true);
-  }
-
-  /* A felső kapcsoló tartalma: a Boltok fülön bolt-alkategóriák, máshol rendezés. */
+  /* A felső kapcsoló minden fülön az adott kategória alkategóriáit mutatja. */
   function renderSegmented() {
     var seg = el.segmented;
+    var subs = subcatsFor(state.tab);
+    var active = activeSubcat(state.tab);
     var html = '<span class="seg-indicator" id="segIndicator" aria-hidden="true"></span>';
-    if (state.tab === 'bolt_bevasarlas') {
-      seg.classList.add('is-cats');
-      seg.setAttribute('aria-label', 'Bolt kategóriák');
-      for (var i = 0; i < SHOP_CATS.length; i++) {
-        var c = SHOP_CATS[i];
-        var on = c.key === state.shopCat;
-        html += '<button type="button" class="seg-btn' + (on ? ' is-active' : '') +
-          '" data-shopcat="' + c.key + '" aria-pressed="' + on + '">' + c.label + '</button>';
-      }
-      seg.style.setProperty('--n', SHOP_CATS.length);
-      seg.style.setProperty('--i', shopCatIndex(state.shopCat));
-    } else {
-      seg.classList.remove('is-cats');
-      seg.setAttribute('aria-label', 'Rendezés');
-      var sorts = [['distance', 'Távolság'], ['recommended', 'Ajánlott']];
-      for (var j = 0; j < sorts.length; j++) {
-        var on2 = sorts[j][0] === state.sort;
-        html += '<button type="button" class="seg-btn' + (on2 ? ' is-active' : '') +
-          '" data-sort="' + sorts[j][0] + '" aria-pressed="' + on2 + '">' + sorts[j][1] + '</button>';
-      }
-      seg.style.setProperty('--n', 2);
-      seg.style.setProperty('--i', state.sort === 'recommended' ? 1 : 0);
+    for (var i = 0; i < subs.length; i++) {
+      var on = subs[i].key === active;
+      html += '<button type="button" class="seg-btn' + (on ? ' is-active' : '') +
+        '" data-subcat="' + subs[i].key + '" aria-pressed="' + on + '">' + subs[i].label + '</button>';
     }
+    seg.classList.toggle('is-cats', subs.length > 2);
+    seg.setAttribute('aria-label', 'Kategóriák');
+    seg.style.setProperty('--n', subs.length || 1);
+    seg.style.setProperty('--i', Math.max(0, subcatIndex(state.tab, active)));
     seg.innerHTML = html;
   }
 
@@ -892,9 +894,7 @@
     });
     el.segmented.addEventListener('click', function (e) {
       var b = e.target.closest('.seg-btn');
-      if (!b) return;
-      if (b.hasAttribute('data-sort')) setSort(b.getAttribute('data-sort'));
-      else if (b.hasAttribute('data-shopcat')) setShopCat(b.getAttribute('data-shopcat'));
+      if (b && b.hasAttribute('data-subcat')) setSubCat(b.getAttribute('data-subcat'));
     });
 
     el.favBtn.addEventListener('click', function () { openSheet('favSheet'); });
