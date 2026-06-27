@@ -25,8 +25,8 @@
   /* ---- Alkategóriák fülönként (a felső kapcsoló minden fülön ezeket mutatja) ---- */
   var SUBCATS = {
     'rejtett_gyongyszem': [
-      { key: 'tortenelem', label: 'Történelem' },
-      { key: 'kilato', label: 'Kilátó' },
+      { key: 'senj', label: 'Senj' },
+      { key: 'vinodol', label: 'Vinodol' },
       { key: 'tengerpart', label: 'Tengerpart' }
     ],
     'strand': [
@@ -47,9 +47,9 @@
     ]
   };
   var SUBCAT_OF = {
-    'gem-003': 'tortenelem', 'gem-006': 'tortenelem', 'gem-020': 'tortenelem',
-    'gem-002': 'kilato', 'gem-008': 'kilato',
-    'gem-004': 'tengerpart', 'gem-005': 'tengerpart', 'gem-009': 'tengerpart',
+    'photo-001': 'senj', 'photo-003': 'senj',
+    'photo-002': 'vinodol', 'photo-004': 'vinodol', 'photo-005': 'vinodol',
+    'photo-006': 'tengerpart', 'photo-007': 'tengerpart', 'photo-008': 'tengerpart',
     'beach-003': 'varosi', 'beach-006': 'varosi', 'beach-010': 'varosi',
     'beach-001': 'obol', 'beach-002': 'obol', 'beach-004': 'obol', 'beach-005': 'obol', 'beach-007': 'obol',
     'beach-008': 'svetijuraj', 'beach-009': 'svetijuraj',
@@ -308,7 +308,12 @@
     var tab = state.tab;
     var sub = activeSubcat(tab);
     var list = state.pois.filter(function (p) {
-      return p.category === tab && SUBCAT_OF[p.id] === sub;
+      if (tab === 'rejtett_gyongyszem') {
+        // Fotó fül: minden fotóspot (alapkategóriától függetlenül)
+        return p.photo_spot === true && SUBCAT_OF[p.id] === sub;
+      }
+      // többi fül: saját kategória, a fotóspotok kivételével
+      return p.category === tab && !p.photo_spot && SUBCAT_OF[p.id] === sub;
     });
     // alkategórián belül: a felhasználó helyétől mért távolság szerint növekvő
     list.sort(function (a, b) { return effectiveDistanceKm(a) - effectiveDistanceKm(b); });
@@ -353,7 +358,7 @@
 
   function cardHtml(poi) {
     var name = displayName(poi);
-    var ico = CAT_ICON[poi.category] || '📍';
+    var ico = poi.photo_spot ? '📸' : (CAT_ICON[poi.category] || '📍');
     var dist = fmtDistance(effectiveDistanceKm(poi));
     var ti = timeInfo(poi);
 
@@ -408,6 +413,10 @@
     var list = poisForTab();
     var html = '';
     for (var i = 0; i < list.length; i++) html += cardHtml(list[i]);
+    if (state.tab === 'rejtett_gyongyszem') {
+      html += '<p class="credits-line" style="text-align:center;padding:12px 0 4px;margin:0">' +
+        '<a href="credits.html" target="_blank" rel="noopener" style="color:var(--text-2);font-size:12px;text-decoration:none">Képek forrása · Wikimedia Commons</a></p>';
+    }
     el.poiList.innerHTML = html;
 
     // képek fade-in
@@ -677,7 +686,7 @@
   }
 
   function sheetRowName(poi) {
-    return '<span class="si-ico" aria-hidden="true">' + (CAT_ICON[poi.category] || '📍') + '</span>' +
+    return '<span class="si-ico" aria-hidden="true">' + (poi.photo_spot ? '📸' : (CAT_ICON[poi.category] || '📍')) + '</span>' +
       '<span class="si-name">' + escapeHtml(displayName(poi)) + '</span>';
   }
 

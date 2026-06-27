@@ -6,801 +6,6 @@
   },
   "pois": [
     {
-      "id": "gem-002",
-      "rank": 2,
-      "display_order": 1,
-      "name": "Vratnik – Melnice",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "panorámaút / kilátópont",
-      "location_area": "Vratnik-hágó, Senj felett",
-      "gps": {
-        "lat": 44.97851,
-        "lng": 14.98694
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vratnik%2C%20Senj%2C%20Croatia",
-      "gps_accuracy": "feature_point",
-      "gps_source": "Mapy / OSM: Vratnik mountain pass GPS; webes ellenőrzés: 2026-06-25",
-      "google_maps_query": "Vratnik, Senj, Croatia",
-      "navigation_query_clean": "Vratnik, Senj, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.9785058,14.9869436",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Vratnik%2C%20Senj%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Vratnik%2C%20Senj%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Vratnik, Senj, Croatia",
-      "place_id": null,
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 19,
-      "distance_roundtrip_km": 38,
-      "estimated_drive_time_one_way": "kb. 25–30 perc, becslés",
-      "drive_time_minutes": {
-        "min": 25,
-        "max": 30
-      },
-      "estimated_walk_time": "0–10 perc; elsősorban autós fotómegálló",
-      "walk_time_minutes": {
-        "min": 0,
-        "max": 10
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 2.5,
-      "experience_value": "magas",
-      "accessibility": "magas",
-      "calmness": "közepes",
-      "practicality": "magas",
-      "value_for_money": "magas",
-      "pwa_priority": "magas",
-      "uncertainty_level": "közepes",
-      "scores": {
-        "experience_value": 3,
-        "accessibility": 3,
-        "calmness": 2,
-        "practicality": 3,
-        "value_for_money": 3,
-        "pwa_priority": 3,
-        "uncertainty_level": 2
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "30-90 perc",
-      "combine_with": [
-        "gem-003",
-        "gem-008"
-      ],
-      "image": {
-        "local_path": "assets/poi/card/gem-002.webp",
-        "thumb_path": "assets/poi/thumb/gem-002.webp",
-        "sheet_path": "assets/poi/sheet/gem-002.webp",
-        "alt": "Panorámás hegyi út Senj felett"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "gyors panoráma, naplemente előtti autózás, fotózás",
-      "not_ideal_for": "ködös, esős vagy nagyon szeles idő",
-      "main_reason_to_include": "Kis időráfordítással nagy panorámaélményt ad Senj és a tenger irányába.",
-      "main_risk_or_drawback": "Biztonságos megállási pont és szélviszonyok változók.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők; szél és látási viszonyok ellenőrizendők",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Visit Senj – Vratnik",
-          "url": "https://visitsenj.com/en/senj-riviera/vratnik/",
-          "used_for": "Vratnik-hágó és panoráma",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-25",
-      "last_verified_note": "Webes ellenőrzés: 2026-06-25. Távolság és autóidő becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
-      "id": "gem-003",
-      "rank": 3,
-      "display_order": 2,
-      "name": "Tvrđava Nehaj",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "erőd / történelmi hely / kilátópont",
-      "location_area": "Senj, Trbušnjak-domb",
-      "gps": {
-        "lat": 44.98653,
-        "lng": 14.90343
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tvr%C4%91ava%20Nehaj%2C%20Nehajeva%20bb%2C%2053270%20Senj%2C%20Croatia",
-      "gps_accuracy": "feature_point",
-      "gps_source": "Wikimedia Commons EXIF / Nehaj-erőd környéke; webes ellenőrzés: 2026-06-25",
-      "google_maps_query": "Tvrđava Nehaj, Nehajeva bb, 53270 Senj, Croatia",
-      "navigation_query_clean": "Tvrđava Nehaj, Nehajeva bb, 53270 Senj, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.9865278,14.9034278",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Tvr%C4%91ava%20Nehaj%2C%20Nehajeva%20bb%2C%2053270%20Senj%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Tvr%C4%91ava%20Nehaj%2C%20Nehajeva%20bb%2C%2053270%20Senj%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Tvrđava Nehaj, Nehajeva bb, 53270 Senj, Croatia",
-      "place_id": "ChIJfeXK3XeZY0cRxIh0eVnvN5g",
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 2.2,
-      "distance_roundtrip_km": 4.4,
-      "estimated_drive_time_one_way": "kb. 5–8 perc, becslés",
-      "drive_time_minutes": {
-        "min": 5,
-        "max": 8
-      },
-      "estimated_walk_time": "szállástól kb. 25–35 perc gyalog, emelkedővel; parkolótól kb. 5–10 perc",
-      "walk_time_minutes": {
-        "min": 25,
-        "max": 35
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 0.3,
-      "experience_value": "magas",
-      "accessibility": "magas",
-      "calmness": "közepes",
-      "practicality": "magas",
-      "value_for_money": "magas",
-      "pwa_priority": "magas",
-      "uncertainty_level": "alacsony",
-      "scores": {
-        "experience_value": 3,
-        "accessibility": 3,
-        "calmness": 2,
-        "practicality": 3,
-        "value_for_money": 3,
-        "pwa_priority": 3,
-        "uncertainty_level": 1
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "30-90 perc",
-      "combine_with": [
-        "gem-008",
-        "gem-020"
-      ],
-      "image": {
-        "local_path": "assets/poi/card/gem-003.webp",
-        "thumb_path": "assets/poi/thumb/gem-003.webp",
-        "sheet_path": "assets/poi/sheet/gem-003.webp",
-        "alt": "Nehaj erőd Senj felett"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "első esti program, városi tájékozódás, történelem, panoráma",
-      "not_ideal_for": "nagyon szeles idő, emelkedőn sétálni nem szeretők",
-      "main_reason_to_include": "Senj legismertebb történelmi tájékozódási pontja, rövid programként is erős kilátással.",
-      "main_risk_or_drawback": "Nyitvatartás és belépődíj szezonálisan változhat; erős bora esetén kellemetlen.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők; 2026-os nyitvatartás és belépő ellenőrizendő",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Muzej Senj – Tvrđava Nehaj",
-          "url": "https://www.muzej-senj.hr/tvrdava-nehaj/",
-          "used_for": "Nehaj erőd hivatalos cím és intézményi kezelés",
-          "reliability": "magas"
-        },
-        {
-          "type": "official_or_local",
-          "name": "Visit Senj – Nehaj Fortress",
-          "url": "https://visitsenj.com/en/attraction/nehaj-fortress/",
-          "used_for": "turisztikai helyazonosítás",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-26",
-      "last_verified_note": "V7 célzott webes kontroll: navigációs cél, forrásaudit és Cowork-döntési zár frissítve. Távolság és autóidő továbbra is becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
-      "id": "gem-004",
-      "rank": 4,
-      "display_order": 3,
-      "name": "Donja Klada",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "nyugodt parti falu / naplementés hely",
-      "location_area": "Senjtől délre, Klada térsége",
-      "gps": {
-        "lat": 44.81519,
-        "lng": 14.88374
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Donja%20Klada%2C%20Croatia",
-      "gps_accuracy": "village_center",
-      "gps_source": "Mapcarta / OSM: Donja Klada településpont; webes ellenőrzés: 2026-06-25",
-      "google_maps_query": "Donja Klada, Croatia",
-      "navigation_query_clean": "Donja Klada, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.81519,14.88374",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Donja%20Klada%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Donja%20Klada%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Donja Klada, Croatia",
-      "place_id": null,
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 27,
-      "distance_roundtrip_km": 54,
-      "estimated_drive_time_one_way": "kb. 30–40 perc, becslés",
-      "drive_time_minutes": {
-        "min": 30,
-        "max": 40
-      },
-      "estimated_walk_time": "kb. 5–20 perc könnyű faluséta",
-      "walk_time_minutes": {
-        "min": 5,
-        "max": 20
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 3.5,
-      "experience_value": "magas",
-      "accessibility": "közepes",
-      "calmness": "magas",
-      "practicality": "közepes",
-      "value_for_money": "magas",
-      "pwa_priority": "magas",
-      "uncertainty_level": "közepes",
-      "scores": {
-        "experience_value": 3,
-        "accessibility": 2,
-        "calmness": 3,
-        "practicality": 2,
-        "value_for_money": 3,
-        "pwa_priority": 3,
-        "uncertainty_level": 2
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "1-2 óra",
-      "combine_with": [],
-      "image": {
-        "local_path": "assets/poi/card/gem-004.webp",
-        "thumb_path": "assets/poi/thumb/gem-004.webp",
-        "sheet_path": "assets/poi/sheet/gem-004.webp",
-        "alt": "Csendes tengerparti falu Senjtől délre"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "naplemente, csendes páros séta, fotózás",
-      "not_ideal_for": "sok szolgáltatást keresők",
-      "main_reason_to_include": "Nyugodt, kis parti hely erős szigetpanorámával és naplementés potenciállal.",
-      "main_risk_or_drawback": "Kanyargós út, korlátozott parkolás és szolgáltatások.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők; útállapot és helyi szolgáltatások ellenőrizendők",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Visit Senj – Klada",
-          "url": "https://visitsenj.com/en/senj-riviera/klada/",
-          "used_for": "Donja Klada, nyugalom, naplemente",
-          "reliability": "magas"
-        },
-        {
-          "type": "official_or_local",
-          "name": "Parkovi Hrvatske – Velebit Nature Park",
-          "url": "https://www.parkovihrvatske.hr/en/park-prirode-velebit-v2",
-          "used_for": "térségi kontextus",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-25",
-      "last_verified_note": "Webes ellenőrzés: 2026-06-25. Távolság és autóidő becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
-      "id": "gem-005",
-      "rank": 5,
-      "display_order": 4,
-      "name": "Lukovo Otočko",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "kis falu / öblök / fotós hely",
-      "location_area": "Senjtől délre, Lukovo térsége",
-      "gps": {
-        "lat": 44.85531,
-        "lng": 14.89273
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Lukovo%20Oto%C4%8Dko%2C%20Croatia",
-      "gps_accuracy": "village_center",
-      "gps_source": "Mapcarta / OSM: Lukovo településpont; webes ellenőrzés: 2026-06-25",
-      "google_maps_query": "Lukovo Otočko, Croatia",
-      "navigation_query_clean": "Lukovo Otočko, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.85531,14.89273",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Lukovo%20Oto%C4%8Dko%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Lukovo%20Oto%C4%8Dko%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Lukovo Otočko, Croatia",
-      "place_id": null,
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 28,
-      "distance_roundtrip_km": 56,
-      "estimated_drive_time_one_way": "kb. 35–45 perc, becslés",
-      "drive_time_minutes": {
-        "min": 35,
-        "max": 45
-      },
-      "estimated_walk_time": "kb. 5–20 perc faluséta, közeli öblöknél kb. 10 perc",
-      "walk_time_minutes": {
-        "min": 5,
-        "max": 20
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 3.6,
-      "experience_value": "magas",
-      "accessibility": "közepes",
-      "calmness": "magas",
-      "practicality": "közepes",
-      "value_for_money": "magas",
-      "pwa_priority": "magas",
-      "uncertainty_level": "közepes",
-      "scores": {
-        "experience_value": 3,
-        "accessibility": 2,
-        "calmness": 3,
-        "practicality": 2,
-        "value_for_money": 3,
-        "pwa_priority": 3,
-        "uncertainty_level": 2
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "1-2 óra",
-      "combine_with": [
-        "beach-005"
-      ],
-      "image": {
-        "local_path": "assets/poi/card/gem-005.webp",
-        "thumb_path": "assets/poi/thumb/gem-005.webp",
-        "sheet_path": "assets/poi/sheet/gem-005.webp",
-        "alt": "Nyugodt öböl és parti település Lukovo Otočkoban"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "nyugodt páros kirándulás, fotózás, rövid öbölkeresés",
-      "not_ideal_for": "sok szolgáltatást vagy széles strandot keresők",
-      "main_reason_to_include": "Csendes parti falu, különleges tunera-oszlopokkal és kis öblökkel.",
-      "main_risk_or_drawback": "Kanyargós út, korlátozott szolgáltatások és szezonális parkolási bizonytalanság.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Visit Senj – Lukovo",
-          "url": "https://visitsenj.com/en/senj-riviera/lukovo/",
-          "used_for": "falu, öblök, tunera-oszlopok",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-25",
-      "last_verified_note": "Webes ellenőrzés: 2026-06-25. Távolság és autóidő becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
-      "id": "gem-006",
-      "rank": 6,
-      "display_order": 5,
-      "name": "Starigrad Senjski",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "parti falu / rom / rövid sétás látnivaló",
-      "location_area": "Senjtől délre, Starigrad",
-      "gps": {
-        "lat": 44.79788,
-        "lng": 14.88206
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Starigrad%20Senjski%2C%20Croatia",
-      "gps_accuracy": "village_center",
-      "gps_source": "Mapy / OSM: Starigrad településpont; webes ellenőrzés: 2026-06-25",
-      "google_maps_query": "Starigrad Senjski, Croatia",
-      "navigation_query_clean": "Starigrad Senjski, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.7978839,14.8820625",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Starigrad%20Senjski%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Starigrad%20Senjski%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Starigrad Senjski, Croatia",
-      "place_id": null,
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 29,
-      "distance_roundtrip_km": 58,
-      "estimated_drive_time_one_way": "kb. 35–45 perc, becslés",
-      "drive_time_minutes": {
-        "min": 35,
-        "max": 45
-      },
-      "estimated_walk_time": "kb. 10–30 perc faluséta; teljes Starigrad–Donja Klada séta már 1,5–2 óra",
-      "walk_time_minutes": {
-        "min": 10,
-        "max": 30
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 3.8,
-      "experience_value": "magas",
-      "accessibility": "közepes",
-      "calmness": "magas",
-      "practicality": "közepes",
-      "value_for_money": "magas",
-      "pwa_priority": "magas",
-      "uncertainty_level": "közepes",
-      "scores": {
-        "experience_value": 3,
-        "accessibility": 2,
-        "calmness": 3,
-        "practicality": 2,
-        "value_for_money": 3,
-        "pwa_priority": 3,
-        "uncertainty_level": 2
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "1-2 óra",
-      "combine_with": [],
-      "image": {
-        "local_path": "assets/poi/card/gem-006.webp",
-        "thumb_path": "assets/poi/thumb/gem-006.webp",
-        "sheet_path": "assets/poi/sheet/gem-006.webp",
-        "alt": "Starigrad Senjski tengerparti hangulata"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "csendes falu, romok, fotózás, könnyű parti felfedezés",
-      "not_ideal_for": "infrastruktúrált gyors strandprogramot keresők",
-      "main_reason_to_include": "Hangulatos parti település történelmi maradványokkal és kevésbé zsúfolt karakterrel.",
-      "main_risk_or_drawback": "Hosszabb parti ösvény már nem rövid fotómegálló.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők; ösvényállapot és hőség/szél ellenőrizendő",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Visit Senj – Starigrad",
-          "url": "https://visitsenj.com/en/senj-riviera/starigrad/",
-          "used_for": "falu, Gradina, Grbačka-öböl",
-          "reliability": "magas"
-        },
-        {
-          "type": "official_or_local",
-          "name": "Parkovi Hrvatske – Velebit Nature Park",
-          "url": "https://www.parkovihrvatske.hr/en/park-prirode-velebit-v2",
-          "used_for": "Starigrad–Donja Klada útvonal",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-25",
-      "last_verified_note": "Webes ellenőrzés: 2026-06-25. Távolság és autóidő becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
-      "id": "gem-008",
-      "rank": 8,
-      "display_order": 6,
-      "name": "Park Nehaj",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "helyi séta / kilátópont / esti program",
-      "location_area": "Senj, Nehaj erőd környéke",
-      "gps": {
-        "lat": 44.98675,
-        "lng": 14.90256
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Park%20Nehaj%2C%20Senj%2C%20Croatia",
-      "gps_accuracy": "feature_point",
-      "gps_source": "Mapcarta / OSM: Park Nehaj; webes ellenőrzés: 2026-06-25",
-      "google_maps_query": "Park Nehaj, Senj, Croatia",
-      "navigation_query_clean": "Park Nehaj, Senj, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.98675,14.90256",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Park%20Nehaj%2C%20Senj%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Park%20Nehaj%2C%20Senj%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Park Nehaj, Senj, Croatia",
-      "place_id": "ChIJeyjrNZyZY0cRRLLQNgsV0sw",
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 1.8,
-      "distance_roundtrip_km": 3.6,
-      "estimated_drive_time_one_way": "kb. 5–8 perc, becslés",
-      "drive_time_minutes": {
-        "min": 5,
-        "max": 8
-      },
-      "estimated_walk_time": "szállástól kb. 20–30 perc emelkedővel; parkon belül 20–60 perc",
-      "walk_time_minutes": {
-        "min": 20,
-        "max": 30
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 0.2,
-      "experience_value": "közepes",
-      "accessibility": "magas",
-      "calmness": "közepes",
-      "practicality": "magas",
-      "value_for_money": "magas",
-      "pwa_priority": "magas",
-      "uncertainty_level": "alacsony",
-      "scores": {
-        "experience_value": 2,
-        "accessibility": 3,
-        "calmness": 2,
-        "practicality": 3,
-        "value_for_money": 3,
-        "pwa_priority": 3,
-        "uncertainty_level": 1
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "30-90 perc",
-      "combine_with": [
-        "gem-003"
-      ],
-      "image": {
-        "local_path": "assets/poi/card/gem-008.webp",
-        "thumb_path": "assets/poi/thumb/gem-008.webp",
-        "sheet_path": "assets/poi/sheet/gem-008.webp",
-        "alt": "Zöld park és sétaút a Nehaj erőd körül"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "rövid esti séta, első nap, naplemente előtti lazítás",
-      "not_ideal_for": "teljesen sík sétát keresők",
-      "main_reason_to_include": "Közel van a szálláshoz, rövid idő alatt ad kilátást és Senj-hangulatot.",
-      "main_risk_or_drawback": "Emelkedős megközelítés; sötétedés után világítás ellenőrizendő.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők; ösvényállapot, világítás és szél ellenőrizendő",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Visit Senj – Park Nehaj",
-          "url": "https://visitsenj.com/en/attraction/park-nehaj/",
-          "used_for": "park, kavicsos utak, kilátás",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-25",
-      "last_verified_note": "Webes ellenőrzés: 2026-06-25. Távolság és autóidő becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
-      "id": "gem-009",
-      "rank": 9,
-      "display_order": 7,
-      "name": "Sveti Juraj",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "parti falu / kis öblök / könnyű autós kirándulás",
-      "location_area": "Senjtől délre, Sveti Juraj",
-      "gps": {
-        "lat": 44.92854,
-        "lng": 14.91963
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sveti%20Juraj%2C%20Croatia",
-      "gps_accuracy": "village_center",
-      "gps_source": "Mapcarta / OSM: Sveti Juraj településpont; webes ellenőrzés: 2026-06-25",
-      "google_maps_query": "Sveti Juraj, Croatia",
-      "navigation_query_clean": "Sveti Juraj, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.92854,14.91963",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Sveti%20Juraj%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Sveti%20Juraj%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Sveti Juraj, Croatia",
-      "place_id": null,
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 10,
-      "distance_roundtrip_km": 20,
-      "estimated_drive_time_one_way": "kb. 12–18 perc, becslés",
-      "drive_time_minutes": {
-        "min": 12,
-        "max": 18
-      },
-      "estimated_walk_time": "kb. 5–30 perc könnyű faluséta vagy közeli öböl-megálló",
-      "walk_time_minutes": {
-        "min": 5,
-        "max": 30
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 1.3,
-      "experience_value": "közepes",
-      "accessibility": "magas",
-      "calmness": "közepes",
-      "practicality": "magas",
-      "value_for_money": "magas",
-      "pwa_priority": "magas",
-      "uncertainty_level": "közepes",
-      "scores": {
-        "experience_value": 2,
-        "accessibility": 3,
-        "calmness": 2,
-        "practicality": 3,
-        "value_for_money": 3,
-        "pwa_priority": 3,
-        "uncertainty_level": 2
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "1-2 óra",
-      "combine_with": [
-        "beach-008"
-      ],
-      "image": {
-        "local_path": "assets/poi/card/gem-009.webp",
-        "thumb_path": "assets/poi/thumb/gem-009.webp",
-        "sheet_path": "assets/poi/sheet/gem-009.webp",
-        "alt": "Sveti Juraj kis tengerparti települése"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "könnyű közeli autós kirándulás, rövid esti program",
-      "not_ideal_for": "teljesen csendes helyet keresők főszezonban",
-      "main_reason_to_include": "Nagyon közel van Senjhez, mégis más hangulatú kis parti falu.",
-      "main_risk_or_drawback": "Főszezonban a közeli öblök és parkolók telítettek lehetnek.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Visit Senj – Sveti Juraj",
-          "url": "https://visitsenj.com/en/senj-riviera/sveti-juraj/",
-          "used_for": "falu és környező öblök",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-25",
-      "last_verified_note": "Webes ellenőrzés: 2026-06-25. Távolság és autóidő becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
-      "id": "gem-020",
-      "rank": 20,
-      "display_order": 8,
-      "name": "Gradski muzej Senj",
-      "category": "rejtett_gyongyszem",
-      "subcategory": "városi múzeum / rosszidős helyi program",
-      "location_area": "Senj óváros",
-      "gps": {
-        "lat": 44.98944,
-        "lng": 14.90583
-      },
-      "has_coordinates": true,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gradski%20muzej%20Senj%2C%20Milana%20Ogrizovi%C4%87a%205%2C%2053270%20Senj%2C%20Croatia",
-      "gps_accuracy": "area_center",
-      "gps_source": "Senj városközponti koordináta; pontos múzeumbejárat Google Maps queryvel ellenőrizendő",
-      "google_maps_query": "Gradski muzej Senj, Milana Ogrizovića 5, 53270 Senj, Croatia",
-      "navigation_query_clean": "Gradski muzej Senj, Milana Ogrizovića 5, 53270 Senj, Croatia",
-      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.98944,14.90583",
-      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Gradski%20muzej%20Senj%2C%20Milana%20Ogrizovi%C4%87a%205%2C%2053270%20Senj%2C%20Croatia&travelmode=driving",
-      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Gradski%20muzej%20Senj%2C%20Milana%20Ogrizovi%C4%87a%205%2C%2053270%20Senj%2C%20Croatia&directionsmode=driving",
-      "navigation_action": "directions_driving",
-      "navigation_button_label": "Útvonal Google Maps",
-      "navigation_destination_type": "google_maps_query",
-      "navigation_destination_label": "Gradski muzej Senj, Milana Ogrizovića 5, 53270 Senj, Croatia",
-      "place_id": "ChIJgS71_neZY0cRz8R8pkznRjY",
-      "navigation_preferred": "navigation_query_clean",
-      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. A célpont a navigation_query_clean mezőből származik, nem GPS-koordinátából.",
-      "distance_one_way_km": 1.2,
-      "distance_roundtrip_km": 2.4,
-      "estimated_drive_time_one_way": "kb. 4–6 perc, becslés",
-      "drive_time_minutes": {
-        "min": 4,
-        "max": 6
-      },
-      "estimated_walk_time": "kb. 15–20 perc gyalog; beltéri látogatás kb. 45–90 perc",
-      "walk_time_minutes": {
-        "min": 15,
-        "max": 20
-      },
-      "fuel_liters_roundtrip_6_5l_100km": 0.2,
-      "experience_value": "közepes",
-      "accessibility": "magas",
-      "calmness": "magas",
-      "practicality": "magas",
-      "value_for_money": "közepes",
-      "pwa_priority": "közepes",
-      "uncertainty_level": "közepes",
-      "scores": {
-        "experience_value": 2,
-        "accessibility": 3,
-        "calmness": 3,
-        "practicality": 3,
-        "value_for_money": 2,
-        "pwa_priority": 2,
-        "uncertainty_level": 2
-      },
-      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő",
-      "price_category": "ingyenes vagy belépődíjas lehet; indulás előtt ellenőrizendő",
-      "payment_methods": "belépő/szolgáltatás esetén kártya/készpénz ellenőrizendő",
-      "parking_type": "helyszíni, út menti vagy települési parkolás: ellenőrizendő",
-      "beach_equipment": "not_applicable",
-      "weather_sensitivity": {
-        "wind_bora": "erős szél/bora esetén ellenőrizendő vagy kerülendő",
-        "heat": "déli hőségben víz, árnyék és rövidebb program javasolt",
-        "rain": "szabadtéri helyeknél nem ideális; beltéri B-tervnél használható",
-        "sea_condition": "parti helyeknél hullámzás és vízbejutás ellenőrizendő"
-      },
-      "recommended_duration": "45-90 perc",
-      "combine_with": [
-        "gem-003",
-        "gem-008"
-      ],
-      "image": {
-        "local_path": "assets/poi/card/gem-020.webp",
-        "thumb_path": "assets/poi/thumb/gem-020.webp",
-        "sheet_path": "assets/poi/sheet/gem-020.webp",
-        "alt": "Senj városi múzeumának történelmi épülete"
-      },
-      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
-      "best_for": "rossz idő, túl erős szél, várostörténet",
-      "not_ideal_for": "nagy panorámát keresők",
-      "main_reason_to_include": "Közeli, praktikus, beltéri hely Senj történetének megértéséhez.",
-      "main_risk_or_drawback": "Kevésbé rejtett gyöngyszem, inkább hasznos B-terv.",
-      "check_before_departure": "pontos útvonal és autóidő útvonaltervezővel ellenőrizendő; aktuális nyitvatartás, díjak, parkolás, szolgáltatások és helyi szabályok indulás előtt ellenőrizendők; nyitvatartás és belépő ellenőrizendő",
-      "sources": [
-        {
-          "type": "official_or_local",
-          "name": "Muzej Senj – Gradski muzej Senj",
-          "url": "https://www.muzej-senj.hr/",
-          "used_for": "múzeum hivatalos cím és látogatási kontextus",
-          "reliability": "magas"
-        },
-        {
-          "type": "official_or_local",
-          "name": "Grad Senj – Gradski muzej Senj",
-          "url": "https://www.senj.hr/stari/gradski-muzej-senj/",
-          "used_for": "cím és kapcsolat",
-          "reliability": "magas"
-        }
-      ],
-      "last_verified": "2026-06-26",
-      "last_verified_note": "V7 célzott webes kontroll: navigációs cél, forrásaudit és Cowork-döntési zár frissítve. Távolság és autóidő továbbra is becslés Krčka ulica 2A, Senj kiindulóponttal; pontos útvonaltervezői ellenőrzés szükséges."
-    },
-    {
       "id": "beach-001",
       "rank": 1,
       "display_order": 1,
@@ -3874,6 +3079,936 @@
         "sheet_path": "assets/poi/sheet/shop-013.webp",
         "alt": "Gyógyszertár Senj központjában"
       }
+    },
+    {
+      "id": "photo-001",
+      "rank": 9,
+      "display_order": 9,
+      "name": "Tvrđava Nehaj – külső nyugati nézőpont",
+      "category": "rejtett_gyongyszem",
+      "subcategory": "fotóspot / erőd-sziluett / naplemente",
+      "photo_spot": true,
+      "photo_value_score": 9.1,
+      "photo_best_time": [
+        "naplemente",
+        "kék óra"
+      ],
+      "photo_composition_hu": "Erőd a dombon, égbolt és tengeres horizont; alacsonyabb nézőponttal monumentálisabb hatás.",
+      "location_area": "Senj, Nehaj környéke",
+      "gps": {
+        "lat": 44.990025,
+        "lng": 14.900208
+      },
+      "has_coordinates": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nehaj%20Fortress%2C%20Senj%2C%20Croatia",
+      "gps_accuracy": "approximate_viewpoint_from_research",
+      "gps_source": "Wikimedia Commons nyugati nézet koordinátája alapján, közelítő fotópont; helyben finomítandó.",
+      "google_maps_query": "Nehaj Fortress, Senj, Croatia",
+      "navigation_query_clean": "Nehaj Fortress, Senj, Croatia",
+      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=44.990025,14.900208",
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Nehaj%20Fortress%2C%20Senj%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Nehaj%20Fortress%2C%20Senj%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "Nehaj Fortress, Senj, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 2.0,
+      "distance_roundtrip_km": 4.0,
+      "estimated_drive_time_one_way": "kb. 5–8 perc, becslés",
+      "drive_time_minutes": {
+        "min": 5,
+        "max": 8
+      },
+      "estimated_walk_time": "kb. 5–15 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 5,
+        "max": 15
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 0.3,
+      "experience_value": "magas",
+      "accessibility": "magas",
+      "calmness": "közepes",
+      "practicality": "magas",
+      "value_for_money": "magas",
+      "pwa_priority": "magas",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 3,
+        "accessibility": 3,
+        "calmness": 2,
+        "practicality": 3,
+        "value_for_money": 3,
+        "pwa_priority": 3,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "not_applicable",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "20-45 perc",
+      "combine_with": [
+        "gem-003",
+        "gem-008"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-001.webp",
+        "thumb_path": "assets/poi/thumb/photo-001.webp",
+        "sheet_path": "assets/poi/sheet/photo-001.webp",
+        "alt": "Nehaj-erőd külső sziluettje Senj felett"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "erőd-sziluett, naplemente, kék órás Senj-hangulat",
+      "not_ideal_for": "ha pontos fotópontot nem akarsz helyben keresni vagy nagyon erős a szél",
+      "main_reason_to_include": "Nem kifelé néző kilátás, hanem az erődöt használja fő témaként; ikonikusabb Senj-azonosító kép lehet.",
+      "main_risk_or_drawback": "A pontos külső nézőpontot helyben kell biztonságosan kiválasztani.",
+      "access_note_hu": "Nem nyitvatartás-függő külső fotóhely, de a pontos nézőpont helyben finomítandó.",
+      "safety_note_hu": "Út menti vagy domboldali fotózásnál első a biztonságos megállás; szélben óvatosan.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Wikimedia Commons – Nehaj fortress from the west",
+          "url": "https://commons.wikimedia.org/wiki/File:Nehaj_fortress_from_the_west,_Senj,_2010.jpg",
+          "used_for": "nyugati külső nézet / koordináta",
+          "reliability": "közepes-magas"
+        },
+        {
+          "type": "photo_research",
+          "name": "LocationScout – Nehaj Fortress",
+          "url": "https://www.locationscout.net/croatia/11352-nehaj-fortress",
+          "used_for": "fotós helyazonosítás",
+          "reliability": "magas"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
+    },
+    {
+      "id": "photo-002",
+      "rank": 10,
+      "display_order": 10,
+      "name": "Vidikovac Gradina – Oči Vinodola",
+      "category": "rejtett_gyongyszem",
+      "subcategory": "fotóspot / magas kilátópont / tenger-völgy panoráma",
+      "photo_spot": true,
+      "photo_value_score": 8.9,
+      "photo_best_time": [
+        "délután",
+        "naplemente előtt",
+        "tiszta nap"
+      ],
+      "photo_composition_hu": "Völgy, tenger, települések és Kvarner-szigetek egymás mögött; széles panorámához erős.",
+      "location_area": "Ledenice / Novi Vinodolski hátországa",
+      "gps": {
+        "lat": 45.13104,
+        "lng": 14.83205
+      },
+      "has_coordinates": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vidikovac%20Gradina%2C%20Ledenice%2C%20Croatia",
+      "gps_accuracy": "feature_point_approximate",
+      "gps_source": "Mapcarta / Oči Vinodola források alapján átvett közelítő koordináta.",
+      "google_maps_query": "Vidikovac Gradina, Ledenice, Croatia",
+      "navigation_query_clean": "Vidikovac Gradina, Ledenice, Croatia",
+      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=45.13104,14.83205",
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Vidikovac%20Gradina%2C%20Ledenice%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Vidikovac%20Gradina%2C%20Ledenice%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "Vidikovac Gradina, Ledenice, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 28.0,
+      "distance_roundtrip_km": 56.0,
+      "estimated_drive_time_one_way": "kb. 30–40 perc, becslés",
+      "drive_time_minutes": {
+        "min": 30,
+        "max": 40
+      },
+      "estimated_walk_time": "kb. 5–15 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 5,
+        "max": 15
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 3.6,
+      "experience_value": "magas",
+      "accessibility": "közepes",
+      "calmness": "közepes-magas",
+      "practicality": "közepes",
+      "value_for_money": "magas",
+      "pwa_priority": "magas",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 3,
+        "accessibility": 2,
+        "calmness": 2,
+        "practicality": 2,
+        "value_for_money": 3,
+        "pwa_priority": 3,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "not_applicable",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "45-90 perc",
+      "combine_with": [
+        "photo-004",
+        "photo-005"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-002.webp",
+        "thumb_path": "assets/poi/thumb/photo-002.webp",
+        "sheet_path": "assets/poi/sheet/photo-002.webp",
+        "alt": "Magas vinodoli kilátópont tengerrel és szigetekkel"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "nagy panoráma, völgy+tenger+szigetek, naplemente előtti fény",
+      "not_ideal_for": "rossz látási viszonyok, erős szél, ha csak nagyon rövid közeli program fér bele",
+      "main_reason_to_include": "Senjből még reális autós körben ad magas, réteges tenger-völgy panorámát, ami fotóban gazdagabb a sima strandképnél.",
+      "main_risk_or_drawback": "Az utolsó szakasz és parkolás helyben / útvonaltervezőben ellenőrizendő.",
+      "access_note_hu": "Autóval reális kiruccanás; a kilátópont utolsó métereit érdemes térképen ellenőrizni.",
+      "safety_note_hu": "Magas kilátópont, peremek és szél miatt óvatosság szükséges.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Novi Vinodolski official – Vidikovci Oči Vinodola",
+          "url": "https://tz-novi-vinodolski.hr/istrazite-i-dozivite/prirodne-atrakcije/vidikovci-oci-vinodola/",
+          "used_for": "hivatalos kilátópont-hálózat",
+          "reliability": "magas"
+        },
+        {
+          "type": "photo_research",
+          "name": "Under Dreamskies – Oči Vinodola",
+          "url": "https://underdreamskies.com/2024/02/13/oci-vinodola-uputi-se-na-sest-vidikovaca-s-kojih-se-pruzaju-jedni-od-najljepsih-pogleda-u-hrvatskoj/",
+          "used_for": "kilátópont leírás",
+          "reliability": "közepes-magas"
+        },
+        {
+          "type": "photo_research",
+          "name": "Mapcarta – Vidikovac Gradina",
+          "url": "https://mapcarta.com/N2918943519",
+          "used_for": "térképes azonosítás",
+          "reliability": "közepes"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
+    },
+    {
+      "id": "photo-003",
+      "rank": 11,
+      "display_order": 11,
+      "name": "Senj kikötő és óvárosi waterfront",
+      "category": "rejtett_gyongyszem",
+      "subcategory": "fotóspot / városi kikötő / kék óra",
+      "photo_spot": true,
+      "photo_value_score": 8.7,
+      "photo_best_time": [
+        "naplemente",
+        "kék óra",
+        "kora reggel"
+      ],
+      "photo_composition_hu": "Hajók előtérben, óvárosi homlokzatok és Nehaj-erőd háttérben; víztükröződés kék órában.",
+      "location_area": "Senj belváros, tengerparti sétány",
+      "gps": null,
+      "has_coordinates": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Obala%20dr.%20Franje%20Tu%C4%91mana%2C%20Senj%2C%20Croatia",
+      "gps_accuracy": "google_maps_query_only",
+      "gps_source": "A mellékelt kutatási MD nem adott stabil koordinátát; név/cím alapú navigáció javasolt.",
+      "google_maps_query": "Obala dr. Franje Tuđmana, Senj, Croatia",
+      "navigation_query_clean": "Obala dr. Franje Tuđmana, Senj, Croatia",
+      "google_maps_coordinate_url": null,
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Obala%20dr.%20Franje%20Tu%C4%91mana%2C%20Senj%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Obala%20dr.%20Franje%20Tu%C4%91mana%2C%20Senj%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "Obala dr. Franje Tuđmana, Senj, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 1.0,
+      "distance_roundtrip_km": 2.0,
+      "estimated_drive_time_one_way": "kb. 0–5 perc, becslés",
+      "drive_time_minutes": {
+        "min": 0,
+        "max": 5
+      },
+      "estimated_walk_time": "kb. 0–10 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 0,
+        "max": 10
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 0.1,
+      "experience_value": "magas",
+      "accessibility": "magas",
+      "calmness": "közepes",
+      "practicality": "magas",
+      "value_for_money": "magas",
+      "pwa_priority": "magas",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 3,
+        "accessibility": 3,
+        "calmness": 2,
+        "practicality": 3,
+        "value_for_money": 3,
+        "pwa_priority": 3,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "not_applicable",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "20-60 perc",
+      "combine_with": [
+        "gem-003",
+        "beach-003"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-003.webp",
+        "thumb_path": "assets/poi/thumb/photo-003.webp",
+        "sheet_path": "assets/poi/sheet/photo-003.webp",
+        "alt": "Senj kikötője és óvárosi vízpartja"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "első esti séta, kikötői fények, Nehaj a háttérben, kék óra",
+      "not_ideal_for": "nagyon szeles kikötői idő, tömeges főszezon, ha teljesen természetes tájat keresel",
+      "main_reason_to_include": "Hajók, óvárosi homlokzatok, víztükröződés és Nehaj-háttér egy könnyen elérhető esti fotóhelyen.",
+      "main_risk_or_drawback": "Nem rejtett természeti pont; szezonban sok ember és autó lehet.",
+      "access_note_hu": "Gyalog könnyen elérhető, esti fotóhoz külön autózás nélkül is jó.",
+      "safety_note_hu": "Kikötőperemnél, nedves köveknél és erős szélben óvatos mozgás.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Alamy – Senj old town and harbour",
+          "url": "https://www.alamy.com/stock-photo/old-town-senj-croatia.html",
+          "used_for": "vizuális téma / kikötő",
+          "reliability": "közepes"
+        },
+        {
+          "type": "photo_research",
+          "name": "Dreamstime – Senj waterfront",
+          "url": "https://www.dreamstime.com/photos-images/senj-waterfront.html",
+          "used_for": "képbanki vizuális ellenőrzés",
+          "reliability": "közepes"
+        },
+        {
+          "type": "photo_research",
+          "name": "Shutterstock – Senj",
+          "url": "https://www.shutterstock.com/search/senj",
+          "used_for": "gyakori vizuális kompozíció",
+          "reliability": "közepes"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
+    },
+    {
+      "id": "photo-004",
+      "rank": 12,
+      "display_order": 12,
+      "name": "Vidikovac Kuk – Oči Vinodola",
+      "category": "rejtett_gyongyszem",
+      "subcategory": "fotóspot / kilátópont / riviéra panoráma",
+      "photo_spot": true,
+      "photo_value_score": 8.6,
+      "photo_best_time": [
+        "délután",
+        "aranyóra",
+        "tiszta idő"
+      ],
+      "photo_composition_hu": "Klenovica–Novi Vinodolski riviéra felülről, hegyi előtér és tengeri háttér.",
+      "location_area": "Krmpote / Novi Vinodolski riviéra felett",
+      "gps": null,
+      "has_coordinates": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vidikovac%20Kuk%2C%20Krmpote%2C%20Croatia",
+      "gps_accuracy": "google_maps_query_only",
+      "gps_source": "A mellékelt kutatási MD nem adott stabil koordinátát; név alapú térképes keresés és helyszíni finomítás javasolt.",
+      "google_maps_query": "Vidikovac Kuk, Krmpote, Croatia",
+      "navigation_query_clean": "Vidikovac Kuk, Krmpote, Croatia",
+      "google_maps_coordinate_url": null,
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Vidikovac%20Kuk%2C%20Krmpote%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Vidikovac%20Kuk%2C%20Krmpote%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "Vidikovac Kuk, Krmpote, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 26.0,
+      "distance_roundtrip_km": 52.0,
+      "estimated_drive_time_one_way": "kb. 30–40 perc, becslés",
+      "drive_time_minutes": {
+        "min": 30,
+        "max": 40
+      },
+      "estimated_walk_time": "kb. 10–25 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 10,
+        "max": 25
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 3.4,
+      "experience_value": "magas",
+      "accessibility": "közepes",
+      "calmness": "közepes-magas",
+      "practicality": "közepes",
+      "value_for_money": "magas",
+      "pwa_priority": "magas",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 3,
+        "accessibility": 2,
+        "calmness": 2,
+        "practicality": 2,
+        "value_for_money": 3,
+        "pwa_priority": 3,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "not_applicable",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "45-90 perc",
+      "combine_with": [
+        "photo-002",
+        "photo-005"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-004.webp",
+        "thumb_path": "assets/poi/thumb/photo-004.webp",
+        "sheet_path": "assets/poi/sheet/photo-004.webp",
+        "alt": "Kuk kilátópont a Novi Vinodolski riviéra felett"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "riviéra felülnézetből, Klenovica–Novi Vinodolski irány, délutáni fény",
+      "not_ideal_for": "ha nem fér bele kis séta vagy bizonytalan utolsó szakasz",
+      "main_reason_to_include": "A tengerparti települések láncolata, tenger és hegy-völgy világ egy nézőpontból fotózható.",
+      "main_risk_or_drawback": "Az utolsó megközelítés és parkolás előzetes ellenőrzést igényelhet.",
+      "access_note_hu": "Autós kiruccanásként reális, de az utolsó szakaszt térképen ellenőrizni kell.",
+      "safety_note_hu": "Peremek, szél és szűkebb parkolási lehetőség miatt óvatosság.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Novi Vinodolski official – Oči Vinodola",
+          "url": "https://tz-novi-vinodolski.hr/istrazite-i-dozivite/prirodne-atrakcije/vidikovci-oci-vinodola/",
+          "used_for": "kilátópont-hálózat",
+          "reliability": "magas"
+        },
+        {
+          "type": "photo_research",
+          "name": "Under Dreamskies – Kuk kilátópont",
+          "url": "https://underdreamskies.com/2024/02/13/oci-vinodola-uputi-se-na-sest-vidikovaca-s-kojih-se-pruzaju-jedni-od-najljepsih-pogleda-u-hrvatskoj/",
+          "used_for": "kilátópont leírás",
+          "reliability": "közepes-magas"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
+    },
+    {
+      "id": "photo-005",
+      "rank": 13,
+      "display_order": 13,
+      "name": "Otočić San Marino – Novi Vinodolski",
+      "category": "rejtett_gyongyszem",
+      "subcategory": "fotóspot / kis sziget / templom / tengerparti ikon",
+      "photo_spot": true,
+      "photo_value_score": 8.2,
+      "photo_best_time": [
+        "késő délután",
+        "naplemente",
+        "enyhén felhős tiszta ég"
+      ],
+      "photo_composition_hu": "Sziget és templom középen, körülötte kék tenger; partvonalról hosszabb tengeri nézet.",
+      "location_area": "Novi Vinodolski",
+      "gps": {
+        "lat": 45.120333,
+        "lng": 14.798667
+      },
+      "has_coordinates": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Oto%C4%8Di%C4%87%20San%20Marino%2C%20Novi%20Vinodolski%2C%20Croatia",
+      "gps_accuracy": "feature_point_approximate",
+      "gps_source": "A mellékelt kutatási MD DMS koordinátája alapján átszámítva.",
+      "google_maps_query": "Otočić San Marino, Novi Vinodolski, Croatia",
+      "navigation_query_clean": "Otočić San Marino, Novi Vinodolski, Croatia",
+      "google_maps_coordinate_url": "https://www.google.com/maps/search/?api=1&query=45.120333,14.798667",
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Oto%C4%8Di%C4%87%20San%20Marino%2C%20Novi%20Vinodolski%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Oto%C4%8Di%C4%87%20San%20Marino%2C%20Novi%20Vinodolski%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "Otočić San Marino, Novi Vinodolski, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 30.0,
+      "distance_roundtrip_km": 60.0,
+      "estimated_drive_time_one_way": "kb. 30–40 perc, becslés",
+      "drive_time_minutes": {
+        "min": 30,
+        "max": 40
+      },
+      "estimated_walk_time": "kb. 5–15 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 5,
+        "max": 15
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 3.9,
+      "experience_value": "magas",
+      "accessibility": "közepes",
+      "calmness": "közepes-magas",
+      "practicality": "közepes",
+      "value_for_money": "magas",
+      "pwa_priority": "közepes",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 3,
+        "accessibility": 2,
+        "calmness": 2,
+        "practicality": 2,
+        "value_for_money": 3,
+        "pwa_priority": 2,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "not_applicable",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "45-90 perc",
+      "combine_with": [
+        "photo-002",
+        "photo-004"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-005.webp",
+        "thumb_path": "assets/poi/thumb/photo-005.webp",
+        "sheet_path": "assets/poi/sheet/photo-005.webp",
+        "alt": "San Marino kis szigete templommal Novi Vinodolski mellett"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "kis sziget templommal, naplemente, tiszta tengerparti kompozíció",
+      "not_ideal_for": "ha szigorúan Senj-közeli rövid program kell vagy sok a parkolási bizonytalanság",
+      "main_reason_to_include": "Nagyon tiszta fotótéma: kis sziget, templom, kék tenger és partvonal.",
+      "main_risk_or_drawback": "A konkrét parti fotópontot helyben érdemes kiválasztani.",
+      "access_note_hu": "Autóval elérhető Senjből; a part menti fotópont kiválasztása helyben történjen.",
+      "safety_note_hu": "Partköveken csúszásveszély, főszezonban parkolási figyelem.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Novi Vinodolski official – Otočić San Marino",
+          "url": "https://tz-novi-vinodolski.hr/otkrijte-rivijeru/otocic-san-marino/",
+          "used_for": "hivatalos helyleírás",
+          "reliability": "magas"
+        },
+        {
+          "type": "photo_research",
+          "name": "TripAdvisor – Church on San Marino Island",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g303821-d6028439-Reviews-Church_on_San_Marino_Island-Novi_Vinodolski_Primorje_Gorski_Kotar_County.html",
+          "used_for": "értékelési kontextus",
+          "reliability": "közepes"
+        },
+        {
+          "type": "photo_research",
+          "name": "Skoji – San Marino Island GPS",
+          "url": "https://www.skoji.net/sanmarino-island.htm",
+          "used_for": "GPS / helyazonosítás",
+          "reliability": "közepes"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
+    },
+    {
+      "id": "photo-006",
+      "rank": 11,
+      "display_order": 11,
+      "name": "Klenovica – sziklás part / világítótorony környéke",
+      "category": "strand",
+      "subcategory": "fotóspot / sziklás part / naplemente",
+      "photo_spot": true,
+      "photo_value_score": 7.8,
+      "photo_best_time": [
+        "naplemente",
+        "kék óra"
+      ],
+      "photo_composition_hu": "Sziklás előtér, tenger és naplemente; kis parti épített elemek, ha jól hozzáférhetők.",
+      "location_area": "Klenovica",
+      "gps": null,
+      "has_coordinates": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Klenovica%2C%20Croatia",
+      "gps_accuracy": "google_maps_query_only",
+      "gps_source": "A mellékelt kutatási MD nem adott stabil konkrét parti pontot; település/partvonal alapú navigáció javasolt.",
+      "google_maps_query": "Klenovica, Croatia",
+      "navigation_query_clean": "Klenovica, Croatia",
+      "google_maps_coordinate_url": null,
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Klenovica%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Klenovica%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "Klenovica, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 15.0,
+      "distance_roundtrip_km": 30.0,
+      "estimated_drive_time_one_way": "kb. 20–25 perc, becslés",
+      "drive_time_minutes": {
+        "min": 20,
+        "max": 25
+      },
+      "estimated_walk_time": "kb. 5–20 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 5,
+        "max": 20
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 2.0,
+      "experience_value": "közepes-magas",
+      "accessibility": "magas",
+      "calmness": "közepes-magas",
+      "practicality": "magas",
+      "value_for_money": "magas",
+      "pwa_priority": "közepes",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 2,
+        "accessibility": 3,
+        "calmness": 2,
+        "practicality": 3,
+        "value_for_money": 3,
+        "pwa_priority": 2,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "köves/sziklás parti környezet; fürdéshez vízicipő hasznos lehet, de a PWA-ban ne fotótechnikai tanácsként jelenjen meg",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "30-75 perc",
+      "combine_with": [
+        "photo-007",
+        "beach-002"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-006.webp",
+        "thumb_path": "assets/poi/thumb/photo-006.webp",
+        "sheet_path": "assets/poi/sheet/photo-006.webp",
+        "alt": "Klenovica sziklás tengerpartja naplementés hangulatban"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "sziklás előtér, tengeri naplemente, kék óra, kis parti település",
+      "not_ideal_for": "ha fix, egyértelmű POI-t akarsz vagy sötétben nem szeretnél sziklákon mozogni",
+      "main_reason_to_include": "Közeli, északi irányú tengerparti fotótéma sziklás előtérrel és naplementés potenciállal.",
+      "main_risk_or_drawback": "Nem egyetlen stabil fotópont; helyben kell kiválasztani a legjobb partszakaszt.",
+      "access_note_hu": "Autóval rövid kiruccanás; pontos fotópont helyben választandó.",
+      "safety_note_hu": "Sziklás part, csúszásveszély; este visszasétánál figyelni kell.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Rome2Rio – Senj to Klenovica",
+          "url": "https://www.rome2rio.com/s/Senj/Klenovica",
+          "used_for": "távolsági kontextus",
+          "reliability": "közepes"
+        },
+        {
+          "type": "photo_research",
+          "name": "Flickr – Sunset near Klenovica",
+          "url": "https://www.flickr.com/photos/luc-de-zeeuw/51668435344",
+          "used_for": "vizuális naplementés példa",
+          "reliability": "közepes"
+        },
+        {
+          "type": "photo_research",
+          "name": "Dreamstime – Sunset in Klenovica",
+          "url": "https://www.dreamstime.com/stock-photo-sunset-klenovica-beautiful-over-adriatic-sea-little-place-croatia-photographed-big-sea-rocks-allong-sea-lighthouse-image56223563",
+          "used_for": "képbanki vizuális ellenőrzés",
+          "reliability": "közepes"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
+    },
+    {
+      "id": "photo-007",
+      "rank": 12,
+      "display_order": 12,
+      "name": "Vrataruša / Bunica-öböl",
+      "category": "strand",
+      "subcategory": "fotóspot / közeli öböl / türkiz víz",
+      "photo_spot": true,
+      "photo_value_score": 7.7,
+      "photo_best_time": [
+        "reggel",
+        "délután"
+      ],
+      "photo_composition_hu": "Öböl íve, sziklák és türkiz víz; kevésbé városias közeli parti kép.",
+      "location_area": "Senj és Klenovica között",
+      "gps": null,
+      "has_coordinates": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vrataru%C5%A1a%2C%20Senj%2C%20Croatia",
+      "gps_accuracy": "google_maps_query_only",
+      "gps_source": "A mellékelt kutatási MD nem adott stabil koordinátát; név alapú navigáció javasolt.",
+      "google_maps_query": "Vrataruša, Senj, Croatia",
+      "navigation_query_clean": "Vrataruša, Senj, Croatia",
+      "google_maps_coordinate_url": null,
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=Vrataru%C5%A1a%2C%20Senj%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=Vrataru%C5%A1a%2C%20Senj%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "Vrataruša, Senj, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 7.0,
+      "distance_roundtrip_km": 14.0,
+      "estimated_drive_time_one_way": "kb. 10–15 perc, becslés",
+      "drive_time_minutes": {
+        "min": 10,
+        "max": 15
+      },
+      "estimated_walk_time": "kb. 5–15 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 5,
+        "max": 15
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 0.9,
+      "experience_value": "közepes-magas",
+      "accessibility": "magas",
+      "calmness": "közepes",
+      "practicality": "magas",
+      "value_for_money": "magas",
+      "pwa_priority": "közepes",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 2,
+        "accessibility": 3,
+        "calmness": 2,
+        "practicality": 3,
+        "value_for_money": 3,
+        "pwa_priority": 2,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "köves/sziklás parti környezet; fürdéshez vízicipő hasznos lehet, de nem fő appinformáció",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "20-60 perc",
+      "combine_with": [
+        "photo-006",
+        "beach-002"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-007.webp",
+        "thumb_path": "assets/poi/thumb/photo-007.webp",
+        "sheet_path": "assets/poi/sheet/photo-007.webp",
+        "alt": "Vrataruša vagy Bunica közeli öble türkiz vízzel"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "közeli kevésbé városias öböl, türkiz víz, gyors autós megálló",
+      "not_ideal_for": "ha biztos infrastruktúra vagy ikonikus kilátópont kell",
+      "main_reason_to_include": "Közeli kiegészítő fotóspot kisebb öblös hangulattal, sziklákkal és vízszínnel.",
+      "main_risk_or_drawback": "A pontos fotópont és hozzáférés helyben finomítandó.",
+      "access_note_hu": "Közel van Senjhez, de pontos parkolás és hozzáférés helyben ellenőrizendő.",
+      "safety_note_hu": "Köves part, szezonális forgalom és kempingkörnyezet miatt figyelni kell.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Beaches Searcher – Vrataruša",
+          "url": "https://beaches-searcher.com/en/beach/191201283/vratarusa",
+          "used_for": "strand/öböl karakter",
+          "reliability": "közepes"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
+    },
+    {
+      "id": "photo-008",
+      "rank": 14,
+      "display_order": 14,
+      "name": "D8 / E65 Senj–Sveti Juraj panoráma-leállók",
+      "category": "rejtett_gyongyszem",
+      "subcategory": "fotóspot / útvonal / biztonságos panoráma-leállók",
+      "photo_spot": true,
+      "photo_value_score": 7.6,
+      "photo_best_time": [
+        "késő délután",
+        "tiszta idő"
+      ],
+      "photo_composition_hu": "Útkanyar, magasabbról lenéző partkép, Velebit lejtő és Adria együtt.",
+      "location_area": "Jadranska magistrala, Senj–Sveti Juraj irány",
+      "gps": null,
+      "has_coordinates": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=D8%20Senj%20to%20Sveti%20Juraj%2C%20Croatia",
+      "gps_accuracy": "route_only_no_fixed_point",
+      "gps_source": "Útvonal-alapú fotóspot; nincs egyetlen stabil POI-koordináta.",
+      "google_maps_query": "D8 Senj to Sveti Juraj, Croatia",
+      "navigation_query_clean": "D8 Senj to Sveti Juraj, Croatia",
+      "google_maps_coordinate_url": null,
+      "google_maps_directions_url": "https://www.google.com/maps/dir/?api=1&destination=D8%20Senj%20to%20Sveti%20Juraj%2C%20Croatia&travelmode=driving",
+      "ios_google_maps_app_directions_url": "comgooglemaps://?daddr=D8%20Senj%20to%20Sveti%20Juraj%2C%20Croatia&directionsmode=driving",
+      "navigation_action": "directions_driving",
+      "navigation_button_label": "Útvonal Google Maps",
+      "navigation_destination_type": "google_maps_query",
+      "navigation_destination_label": "D8 Senj to Sveti Juraj, Croatia",
+      "place_id": null,
+      "navigation_preferred": "navigation_query_clean",
+      "navigation_note": "Név- és cím-alapú Google Maps útvonaltervezés ajánlott. A PWA gomb elsődlegesen a google_maps_directions_url mezőt használja; iPhone Google Maps app direkt nyitásához az ios_google_maps_app_directions_url használható. Ne építs GPS-koordináta-alapú útvonalgombot.",
+      "distance_one_way_km": 10.0,
+      "distance_roundtrip_km": 20.0,
+      "estimated_drive_time_one_way": "kb. 5–20 perc, becslés",
+      "drive_time_minutes": {
+        "min": 5,
+        "max": 20
+      },
+      "estimated_walk_time": "kb. 0–5 perc, helyszíni finomítással",
+      "walk_time_minutes": {
+        "min": 0,
+        "max": 5
+      },
+      "fuel_liters_roundtrip_6_5l_100km": 1.3,
+      "experience_value": "közepes-magas",
+      "accessibility": "magas",
+      "calmness": "közepes",
+      "practicality": "magas",
+      "value_for_money": "magas",
+      "pwa_priority": "közepes",
+      "uncertainty_level": "közepes",
+      "scores": {
+        "experience_value": 2,
+        "accessibility": 3,
+        "calmness": 2,
+        "practicality": 3,
+        "value_for_money": 3,
+        "pwa_priority": 2,
+        "uncertainty_level": 2
+      },
+      "opening_hours_status": "szabadtéri/szezonális hozzáférés indulás előtt ellenőrizendő; a végső UI-ban ne jelenjen meg nyersen",
+      "price_category": "általában ingyenes szabadtéri fotóspot; belépő vagy parkolási díj helyben ellenőrizendő, ha releváns",
+      "payment_methods": "nem fő adat; díjas parkolás/belépő esetén helyben ellenőrizendő",
+      "parking_type": "helyszíni, út menti vagy települési parkolás: indulás előtt / helyben ellenőrizendő",
+      "beach_equipment": "not_applicable",
+      "weather_sensitivity": {
+        "wind_bora": "erős szél/bora esetén kilátópontokon, sziklás partokon és út menti megállóknál fokozott óvatosság vagy halasztás javasolt",
+        "heat": "déli hőségben rövid programként, vízzel és árnyéktervvel érdemes kezelni",
+        "rain": "szabadtéri fotóspotként esőben nem ideális; csúszós kövek és rossz látási viszonyok lehetnek",
+        "sea_condition": "parti helyeknél hullámzás, nedves kövek és vízpermet ronthatja a biztonságot és a kényelmet"
+      },
+      "recommended_duration": "10-30 perc",
+      "combine_with": [
+        "beach-009",
+        "gem-009",
+        "beach-001"
+      ],
+      "image": {
+        "local_path": "assets/poi/card/photo-008.webp",
+        "thumb_path": "assets/poi/thumb/photo-008.webp",
+        "sheet_path": "assets/poi/sheet/photo-008.webp",
+        "alt": "Jadranska magistrala panorámaút Senj és Sveti Juraj között"
+      },
+      "image_asset_note_for_cowork": "Tervezett kompatibilis asset-útvonal. Ha a fájl nincs a meglévő PWA-ban, ne tölts le új képet, ne cache-eld kötelezően, és használj csendes prémium fallbacket technikai szöveg nélkül.",
+      "data_license_note": "kutatási adat; külső források és térképadatok felhasználási feltételei éles app előtt ellenőrizendők",
+      "best_for": "út menti tenger-hegy panoráma, késő délutáni fény, rövid autós megálló",
+      "not_ideal_for": "ha nincs teljesen biztonságos és szabályos leálló vagy rosszak a látási viszonyok",
+      "main_reason_to_include": "A D8 Senj környéki szakasza hegyoldalt, kanyarokat, Adriát és szigeteket adhat egy képen.",
+      "main_risk_or_drawback": "Nem fix POI; csak teljesen biztonságos leállónál használható.",
+      "access_note_hu": "Útvonal-alapú elemként kezeld, nem fix GPS-pontként; csak szabályos leállónál.",
+      "safety_note_hu": "Kanyargós, forgalmas út. Ne legyen úttestről vagy rosszul belátható kanyarban fotózás.",
+      "check_before_departure": "pontos útvonal, biztonságos leállás/parkolás, szél és helyi hozzáférés indulás előtt ellenőrizendő; ezt a mezőt a UI ne jelenítse meg",
+      "sources": [
+        {
+          "type": "photo_research",
+          "name": "Croatia Week – Jadranska magistrala",
+          "url": "https://www.croatiaweek.com/jadranska-magistrala-the-croatian-scenic-road-among-the-most-beautiful-in-the-world/",
+          "used_for": "látványút kontextus",
+          "reliability": "közepes"
+        },
+        {
+          "type": "photo_research",
+          "name": "Total Croatia News – Senj to Karlobag road",
+          "url": "https://total-croatia-news.com/news/croatian-road/",
+          "used_for": "D8 látványút kontextus",
+          "reliability": "közepes"
+        },
+        {
+          "type": "photo_research",
+          "name": "Horizons Unlimited – Senj-Karlobag D8/E65",
+          "url": "https://new.horizonsunlimited.com/poi_entity/8257",
+          "used_for": "útvonal / motoros panoráma kontextus",
+          "reliability": "közepes"
+        }
+      ],
+      "last_verified": "2026-06-27",
+      "last_verified_note": "A mellékelt senj_35km_fotos_spotok_kutatasi_adatlista.md alapján Cowork-kompatibilis sémára átírva; nem új webes kutatás."
     }
   ]
 }

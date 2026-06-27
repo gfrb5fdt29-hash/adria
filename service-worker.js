@@ -1,7 +1,7 @@
 /* Senj 2026 PWA – service worker
    Egyszerű, verziózott, statikus tárhelyre (GitHub Pages) optimalizált cache.
    Cache-first app shell + POI-képek, offline működéshez. */
-const CACHE_NAME = 'senj-2026-v1';
+const CACHE_NAME = 'senj-2026-v2';
 
 /* Előcache-elt eszközök: app shell, data.json, ikonok és mind a 114 helyi POI-kép
    (assets/poi/card/, assets/poi/thumb/, assets/poi/sheet/). */
@@ -12,35 +12,12 @@ const PRECACHE_ASSETS = [
   "app.js",
   "data.json",
   "manifest.json",
+  "credits.html",
   "assets/icon.svg",
   "assets/icon-192.png",
   "assets/icon-512.png",
   "assets/maskable-icon-512.png",
   "assets/apple-touch-icon.png",
-  "assets/poi/card/gem-002.webp",
-  "assets/poi/thumb/gem-002.webp",
-  "assets/poi/sheet/gem-002.webp",
-  "assets/poi/card/gem-003.webp",
-  "assets/poi/thumb/gem-003.webp",
-  "assets/poi/sheet/gem-003.webp",
-  "assets/poi/card/gem-004.webp",
-  "assets/poi/thumb/gem-004.webp",
-  "assets/poi/sheet/gem-004.webp",
-  "assets/poi/card/gem-005.webp",
-  "assets/poi/thumb/gem-005.webp",
-  "assets/poi/sheet/gem-005.webp",
-  "assets/poi/card/gem-006.webp",
-  "assets/poi/thumb/gem-006.webp",
-  "assets/poi/sheet/gem-006.webp",
-  "assets/poi/card/gem-008.webp",
-  "assets/poi/thumb/gem-008.webp",
-  "assets/poi/sheet/gem-008.webp",
-  "assets/poi/card/gem-009.webp",
-  "assets/poi/thumb/gem-009.webp",
-  "assets/poi/sheet/gem-009.webp",
-  "assets/poi/card/gem-020.webp",
-  "assets/poi/thumb/gem-020.webp",
-  "assets/poi/sheet/gem-020.webp",
   "assets/poi/card/beach-001.webp",
   "assets/poi/thumb/beach-001.webp",
   "assets/poi/sheet/beach-001.webp",
@@ -130,10 +107,33 @@ const PRECACHE_ASSETS = [
   "assets/poi/sheet/shop-012.webp",
   "assets/poi/card/shop-013.webp",
   "assets/poi/thumb/shop-013.webp",
-  "assets/poi/sheet/shop-013.webp"
+  "assets/poi/sheet/shop-013.webp",
+  "assets/poi/card/photo-001.webp",
+  "assets/poi/thumb/photo-001.webp",
+  "assets/poi/sheet/photo-001.webp",
+  "assets/poi/card/photo-002.webp",
+  "assets/poi/thumb/photo-002.webp",
+  "assets/poi/sheet/photo-002.webp",
+  "assets/poi/card/photo-003.webp",
+  "assets/poi/thumb/photo-003.webp",
+  "assets/poi/sheet/photo-003.webp",
+  "assets/poi/card/photo-004.webp",
+  "assets/poi/thumb/photo-004.webp",
+  "assets/poi/sheet/photo-004.webp",
+  "assets/poi/card/photo-005.webp",
+  "assets/poi/thumb/photo-005.webp",
+  "assets/poi/sheet/photo-005.webp",
+  "assets/poi/card/photo-006.webp",
+  "assets/poi/thumb/photo-006.webp",
+  "assets/poi/sheet/photo-006.webp",
+  "assets/poi/card/photo-007.webp",
+  "assets/poi/thumb/photo-007.webp",
+  "assets/poi/sheet/photo-007.webp",
+  "assets/poi/card/photo-008.webp",
+  "assets/poi/thumb/photo-008.webp",
+  "assets/poi/sheet/photo-008.webp"
 ];
 
-/* Telepítés: app shell és képek előcache-elése. */
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -143,7 +143,6 @@ self.addEventListener('install', (event) => {
   );
 });
 
-/* Aktiválás: régi verziójú cache-ek törlése. */
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
@@ -152,13 +151,11 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-/* Lekérés: csak azonos eredetű GET kérések. Cache-first, hálózati tartalékkal.
-   Navigációs kéréseknél offline esetén az index.html-t adjuk vissza. */
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-  if (url.origin !== self.location.origin) return; // külső (pl. Google Maps) ne menjen cache-en át
+  if (url.origin !== self.location.origin) return;
 
   if (req.mode === 'navigate') {
     event.respondWith(
@@ -171,7 +168,6 @@ self.addEventListener('fetch', (event) => {
     caches.match(req).then((cached) => {
       if (cached) return cached;
       return fetch(req).then((res) => {
-        // Sikeres, azonos eredetű válasz cache-elése későbbi offline használathoz.
         if (res && res.status === 200 && res.type === 'basic') {
           const copy = res.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(req, copy));
